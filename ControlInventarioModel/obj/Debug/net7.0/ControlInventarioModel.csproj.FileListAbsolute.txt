@@ -1,0 +1,12 @@
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\ControlInventarioModel\bin\Debug\net7.0\ControlInventarioModel.deps.json
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\ControlInventarioModel\bin\Debug\net7.0\ControlInventarioModel.dll
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\ControlInventarioModel\bin\Debug\net7.0\ControlInventarioModel.pdb
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\ControlInventarioModel\obj\Debug\net7.0\ControlInventarioModel.csproj.AssemblyReference.cache
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\ControlInventarioModel\obj\Debug\net7.0\ControlInventarioModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\ControlInventarioModel\obj\Debug\net7.0\ControlInventarioModel.AssemblyInfoInputs.cache
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\ControlInventarioModel\obj\Debug\net7.0\ControlInventarioModel.AssemblyInfo.cs
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\ControlInventarioModel\obj\Debug\net7.0\ControlInventarioModel.csproj.CoreCompileInputs.cache
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\ControlInventarioModel\obj\Debug\net7.0\ControlInventarioModel.dll
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\ControlInventarioModel\obj\Debug\net7.0\refint\ControlInventarioModel.dll
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\ControlInventarioModel\obj\Debug\net7.0\ControlInventarioModel.pdb
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\ControlInventarioModel\obj\Debug\net7.0\ref\ControlInventarioModel.dll

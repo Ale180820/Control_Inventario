@@ -1,0 +1,42 @@
+﻿@model ControlInventarioModel.Rol
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Editar editar información del rol</h1>
+
+<h4>Rol</h4>
+<hr />
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-body" style="padding:20px 20px 20px 20px">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" />
+                    <div class="row mb-3">
+                        <label for="inputText" class="col-sm-2 col-form-label">Nombre</label>
+                        <div class="col-sm-5">
+                            <input asp-for="Nombre" class="form-control" />
+                            <span asp-validation-for="Nombre" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Guardar" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<div>
+    <a asp-action="Index">Volver</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

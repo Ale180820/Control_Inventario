@@ -1,0 +1,65 @@
+﻿@model ControlInventarioModel.Ubicacion
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Editar información de la ubicación</h1>
+
+<h4>Ubicacion</h4>
+<hr />
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-body" style="padding:20px 20px 20px 20px">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" />
+                    <div class="row mb-3">
+                        <label for="inputText" class="col-sm-2 col-form-label">No. de Gondola</label>
+                        <div class="col-sm-5">
+                            <select asp-for="NoGondola" class="form-select" aria-label="Default select example">
+                                <option selected="">Seleccione una opción</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <span asp-validation-for="NoGondola" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputText" class="col-sm-2 col-form-label">Nivel</label>
+                        <div class="col-sm-5">
+                            <select asp-for="Nivel" class="form-select" aria-label="Default select example">
+                                <option selected="">Seleccione una opción</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <span asp-validation-for="Nivel" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Guardar" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<div>
+    <a asp-action="Index">Volver</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

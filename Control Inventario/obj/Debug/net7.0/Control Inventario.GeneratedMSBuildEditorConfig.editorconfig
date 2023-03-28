@@ -1,0 +1,129 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Control_Inventario
+build_property.RootNamespace = Control_Inventario
+build_property.ProjectDir = C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\Control Inventario\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\Control Inventario
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Autenticacion/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0ZW50aWNhY2lvblxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Autenticacion/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0ZW50aWNhY2lvblxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Producto/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Producto/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Producto/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Producto/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Rols/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Rols/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Rols/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Rols/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Rols/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Ubicacions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Ubicacions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Ubicacions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Ubicacions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Ubicacions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Shared/_EmptyLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FbXB0eUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-5l108at048
+
+[C:/Users/aylin/OneDrive/Documentos/Noveno ciclo 2023/Programación Web/Proyecto/Entrega 2/Control Inventario/Control Inventario/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-cbbr26yz1g
