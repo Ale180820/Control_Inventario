@@ -16,5 +16,6 @@ namespace ControlInventarioModel
         public DateTime? FechaIngreso { get; set; }
         public DateTime? FechaEgreso { get; set; }
         public int RolId { get; set; }
+        public string? Rol { get; set; }
     }
 }

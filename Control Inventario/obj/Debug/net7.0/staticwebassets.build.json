@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MkxJNKeWupBPLBJAtx0Dt0Veup/+gadvEWX2RuO32HA=",
+  "Hash": "pOwpyuVryGy4cbFnZObGpALOjFAXxJYcUREDbWZMCIo=",
   "Source": "Control Inventario",
   "BasePath": "_content/Control Inventario",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\apple-touch-icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\CampanitaLogo.png",
+      "SourceId": "Control Inventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\",
+      "BasePath": "_content/Control Inventario",
+      "RelativePath": "assets/img/CampanitaLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\CampanitaLogo.png"
     },
     {
       "Identity": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\card.jpg",
@@ -289,6 +306,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\not-found.svg"
     },
     {
+      "Identity": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\papeleria-1_66fe77df-9580-4bae-9e3c-4ce0f59fa290_1000x.webp",
+      "SourceId": "Control Inventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\",
+      "BasePath": "_content/Control Inventario",
+      "RelativePath": "assets/img/papeleria-1_66fe77df-9580-4bae-9e3c-4ce0f59fa290_1000x.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\papeleria-1_66fe77df-9580-4bae-9e3c-4ce0f59fa290_1000x.webp"
+    },
+    {
       "Identity": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\product-1.jpg",
       "SourceId": "Control Inventario",
       "SourceType": "Discovered",
@@ -374,6 +408,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\product-5.jpg"
     },
     {
+      "Identity": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\profile.png",
+      "SourceId": "Control Inventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\",
+      "BasePath": "_content/Control Inventario",
+      "RelativePath": "assets/img/profile.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\profile.png"
+    },
+    {
       "Identity": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\profile-img.jpg",
       "SourceId": "Control Inventario",
       "SourceType": "Discovered",
@@ -389,6 +440,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\profile-img.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\school-supplies-back-to-school-2x1-fullres-2.jpg",
+      "SourceId": "Control Inventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\",
+      "BasePath": "_content/Control Inventario",
+      "RelativePath": "assets/img/school-supplies-back-to-school-2x1-fullres-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\school-supplies-back-to-school-2x1-fullres-2.jpg"
     },
     {
       "Identity": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\slides-1.jpg",
@@ -442,6 +510,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\slides-3.jpg"
     },
     {
+      "Identity": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\suply.webp",
+      "SourceId": "Control Inventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\",
+      "BasePath": "_content/Control Inventario",
+      "RelativePath": "assets/img/suply.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\suply.webp"
+    },
+    {
       "Identity": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\js\\main.js",
       "SourceId": "Control Inventario",
       "SourceType": "Discovered",
@@ -457,6 +542,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\main.js"
+    },
+    {
+      "Identity": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\js\\scripts.js",
+      "SourceId": "Control Inventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\",
+      "BasePath": "_content/Control Inventario",
+      "RelativePath": "assets/js/scripts.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\scripts.js"
     },
     {
       "Identity": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\scss\\Readme.txt",
@@ -7138,6 +7240,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\css\\styles.css",
+      "SourceId": "Control Inventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\",
+      "BasePath": "_content/Control Inventario",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
       "Identity": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\css\\sweetalert2.css",

@@ -30,7 +30,7 @@ namespace Control_Inventario.Controllers
         // GET: Usuarios/Create
         public async Task<IActionResult> Create()
         {
-            var path = "Usuario/GetList";
+            var path = "Rol/GetList";
             IEnumerable<Rol> roles = await Functions.APIServices<IEnumerable<Rol>>.Get(path);
             ViewData["RolId"] = new SelectList(roles, "Id", "Nombre");
             return View();
@@ -53,6 +53,9 @@ namespace Control_Inventario.Controllers
         {
             var path = "Usuario/Get/" + id;
             Usuario usuario = await Functions.APIServices<Usuario>.Get(path);
+            var path2 = "Rol/GetList";
+            IEnumerable<Rol> roles = await Functions.APIServices<IEnumerable<Rol>>.Get(path2);
+            ViewData["RolId"] = new SelectList(roles, "Id", "Nombre",usuario.RolId);
             return View(usuario);
         }
 

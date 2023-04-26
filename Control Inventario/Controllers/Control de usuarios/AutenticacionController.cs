@@ -1,7 +1,9 @@
 ﻿using ControlInventarioModel;
+using Google.Protobuf.WellKnownTypes;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -29,7 +31,7 @@ namespace Control_Inventario.Controllers.Control_de_usuarios
                 Email = Email,
                 Contrasena = encriptPass,
                 FechaIngreso = DateTime.Now,
-                RolId = 1
+                RolId = 4
             };
             Usuario usuarioValidation = await Functions.APIServices<Usuario>.Post(usuario, path);
             if (usuarioValidation != null)
@@ -59,6 +61,7 @@ namespace Control_Inventario.Controllers.Control_de_usuarios
             };
             var path = "Usuario/Autentication";
             Usuario usuario1 = await Functions.APIServices<Usuario>.Post(usuario, path);
+            HttpContext.Session.SetString("Rol", usuario1.RolId.ToString());
             if (usuario1 != null)
             {
                 return RedirectToAction("Index", "Home");

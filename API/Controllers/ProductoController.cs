@@ -63,6 +63,7 @@ namespace API.Controllers
                 products.PrecioBase = producto.PrecioBase;
                 products.PrecioVenta = producto.PrecioVenta;
                 products.Descripcion = producto.Descripcion;
+                products.Foto = producto.GUID;
                 _context.Productos.Update(products);
                 await _context.SaveChangesAsync();
             }
@@ -84,7 +85,8 @@ namespace API.Controllers
                 Tipo = producto.Tipo,
                 PrecioBase = producto.PrecioBase,
                 PrecioVenta = producto.PrecioVenta,
-                Descripcion = producto.Descripcion
+                Descripcion = producto.Descripcion,
+                Foto = producto.GUID
             };
             _context.Productos.Add(product_Change);
             await _context.SaveChangesAsync();

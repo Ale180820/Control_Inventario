@@ -15,7 +15,7 @@ namespace API.Controllers
         public async Task<IEnumerable<ControlInventarioModel.Usuario>> GetList()
         {
             InventarioContext _context = new InventarioContext();
-            IEnumerable<ControlInventarioModel.Usuario> usuarios = await _context.Usuarios.Select(m => new ControlInventarioModel.Usuario
+            IEnumerable<ControlInventarioModel.Usuario> usuarios = await _context.Usuarios.Include(c => c.Rol).Select(m => new ControlInventarioModel.Usuario
             {
                 Id = m.Id,
                 Nombre = m.Nombre,
@@ -24,7 +24,8 @@ namespace API.Controllers
                 Contrasena = m.Contrasena,
                 FechaEgreso = m.FechaEgreso,
                 FechaIngreso = m.FechaIngreso,
-                RolId = m.RolId
+                RolId = m.RolId,
+                Rol = m.Rol.Nombre
             }).ToListAsync();
             return usuarios;
         }
@@ -99,6 +100,9 @@ namespace API.Controllers
             var findUser = await _context.Usuarios.Where(u => u.Email == usuario.Email && u.Contrasena == usuario.Contrasena).FirstOrDefaultAsync();
             if (findUser != null)
             {
+                usuario.RolId = findUser.RolId;
+                usuario.Nombre = findUser.Nombre;
+                usuario.Apellido = findUser.Apellido;
                 return usuario;
             }
             return null;

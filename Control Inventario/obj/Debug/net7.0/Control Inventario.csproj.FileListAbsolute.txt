@@ -289,3 +289,8 @@ C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\
 C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\Control Inventario\obj\Debug\net7.0\Control Inventario.pdb
 C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\Control Inventario\obj\Debug\net7.0\Control Inventario.genruntimeconfig.cache
 C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\Control Inventario\obj\Debug\net7.0\ref\Control Inventario.dll
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\Control Inventario\bin\Debug\net7.0\AWSSDK.Core.dll
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\Control Inventario\bin\Debug\net7.0\AWSSDK.S3.dll
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\Control Inventario\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\Control Inventario\bin\Debug\net7.0\MailKit.dll
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\Control Inventario\bin\Debug\net7.0\MimeKit.dll

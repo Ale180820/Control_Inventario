@@ -1,7 +1,11 @@
+using Amazon.S3;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddSession();
 
 var app = builder.Build();
 
@@ -13,15 +17,15 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseSession();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
 app.UseAuthorization();
-
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Autenticacion}/{action=Login}");
+    pattern: "{controller=Home}/{action=HomePage}");
 
 app.Run();

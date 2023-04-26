@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\assets\\css\\style.css"
     },
     {
+      "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\CampanitaLogo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\CampanitaLogo.png"
+    },
+    {
       "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\apple-touch-icon.png",
       "PackagePath": "staticwebassets\\assets\\img\\apple-touch-icon.png"
     },
@@ -61,6 +65,10 @@
       "PackagePath": "staticwebassets\\assets\\img\\not-found.svg"
     },
     {
+      "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\papeleria-1_66fe77df-9580-4bae-9e3c-4ce0f59fa290_1000x.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\papeleria-1_66fe77df-9580-4bae-9e3c-4ce0f59fa290_1000x.webp"
+    },
+    {
       "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\product-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product-1.jpg"
     },
@@ -85,6 +93,14 @@
       "PackagePath": "staticwebassets\\assets\\img\\profile-img.jpg"
     },
     {
+      "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\profile.png",
+      "PackagePath": "staticwebassets\\assets\\img\\profile.png"
+    },
+    {
+      "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\school-supplies-back-to-school-2x1-fullres-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\school-supplies-back-to-school-2x1-fullres-2.jpg"
+    },
+    {
       "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\slides-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slides-1.jpg"
     },
@@ -97,8 +113,16 @@
       "PackagePath": "staticwebassets\\assets\\img\\slides-3.jpg"
     },
     {
+      "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\suply.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\suply.webp"
+    },
+    {
       "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\js\\main.js",
       "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\assets\\js\\scripts.js"
     },
     {
       "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\scss\\Readme.txt",
@@ -1671,6 +1695,10 @@
     {
       "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
       "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\css\\sweetalert2.css",

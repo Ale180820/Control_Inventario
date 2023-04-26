@@ -273,25 +273,43 @@
     <aside id="sidebar" class="sidebar">
 
         <ul class="sidebar-nav" id="sidebar-nav">
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="@Url.Action("Index","Producto")">
-                    <i class="bi bi-grid"></i>
-                    <span>Productos</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="@Url.Action("Index","Rols")">
-                    <i class="bi bi-diagram-2"></i>
-                    <span>Roles</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="@Url.Action("Index","Ubicacions")">
-                    <i class="bi bi-archive"></i>
-                    <span>Ubicaciones</span>
-                </a>
-            </li><!-- End Dashboard Nav -->
+            @if (ViewBag.Rol == "1")
+            {
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="@Url.Action("Index","Producto")">
+                        <i class="bi bi-grid"></i>
+                        <span>Productos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="@Url.Action("Index","Rols")">
+                        <i class="bi bi-diagram-2"></i>
+                        <span>Roles</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="@Url.Action("Index","Ubicacions")">
+                        <i class="bi bi-archive"></i>
+                        <span>Ubicaciones</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="@Url.Action("Index","Usuarios")">
+                        <i class="bi bi-people"></i>
+                        <span>Usuarios</span>
+                    </a>
+                </li>
+            }
+            else
+            {
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="@Url.Action("Index","Producto")">
+                        <i class="bi bi-grid"></i>
+                        <span>Productos</span>
+                    </a>
+                </li>
+            }
+            <!-- End Dashboard Nav -->
 
         </ul>
 
