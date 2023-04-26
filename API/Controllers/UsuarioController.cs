@@ -3,6 +3,10 @@ using Microsoft.EntityFrameworkCore;
 using API.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using MySqlX.XDevAPI.Common;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace API.Controllers
 {
@@ -10,6 +14,11 @@ namespace API.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
+        private readonly IConfiguration _configuration;
+        public UsuarioController(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
         [Route("GetList")]
         [HttpGet]
         public async Task<IEnumerable<ControlInventarioModel.Usuario>> GetList()
@@ -57,13 +66,12 @@ namespace API.Controllers
             Models.Usuario usuarios = _context.Usuarios.FirstOrDefault(s => s.Id == id);
             if (usuarios != null)
             {
-                usuarios.Id = usuario.Id;
                 usuarios.Nombre = usuario.Nombre;
                 usuarios.Apellido = usuario.Apellido;
                 usuarios.Email = usuario.Email;
                 usuarios.Contrasena = usuario.Contrasena;
                 usuarios.FechaEgreso = usuario.FechaEgreso;
-                usuarios.FechaIngreso = usuario.FechaIngreso;
+                usuarios.RolId = usuario.RolId;
                 _context.Usuarios.Update(usuarios);
                 await _context.SaveChangesAsync();
             }
@@ -78,12 +86,10 @@ namespace API.Controllers
             InventarioContext _context = new InventarioContext();
             Models.Usuario usuario_Change = new Models.Usuario
             {
-                Id = usuario.Id,
                 Nombre = usuario.Nombre,
                 Apellido = usuario.Apellido,
                 Email = usuario.Email,
                 Contrasena = usuario.Contrasena,
-                FechaEgreso = usuario.FechaEgreso,
                 FechaIngreso = usuario.FechaIngreso,
                 RolId = usuario.RolId
             };
@@ -94,18 +100,28 @@ namespace API.Controllers
         }
         [Route("Autentication")]
         [HttpPost]
-        public async Task<ControlInventarioModel.Usuario> Autentication(ControlInventarioModel.Usuario usuario)
+        public async Task<ControlInventarioModel.Token> Autentication(ControlInventarioModel.Usuario usuario)
         {
             InventarioContext _context = new InventarioContext();
             var findUser = await _context.Usuarios.Where(u => u.Email == usuario.Email && u.Contrasena == usuario.Contrasena).FirstOrDefaultAsync();
             if (findUser != null)
             {
-                usuario.RolId = findUser.RolId;
-                usuario.Nombre = findUser.Nombre;
-                usuario.Apellido = findUser.Apellido;
-                return usuario;
+                return new ControlInventarioModel.Token
+                {
+                    Id = findUser.Id,
+                    Nombre = findUser.Nombre,
+                    Rol = findUser.RolId,
+                    TokenGenerate = CustomTokenJWT(findUser.Nombre)
+                };
             }
-            return null;
+            return new ControlInventarioModel.Token
+            {
+                Id = 0,
+                Nombre = "",
+                Rol = 0,
+                TokenGenerate = ""
+            };
+
         }
 
         [Route("Delete/{id}")]
@@ -133,6 +149,30 @@ namespace API.Controllers
                 return (result);
                 throw;
             }
+        }
+
+        private string CustomTokenJWT(string Nombre)
+        {
+            var _symmetricSecurityKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(_configuration["JWT:SecretKey"]!)
+            );
+            var _signingCredentials = new SigningCredentials(
+                _symmetricSecurityKey, SecurityAlgorithms.HmacSha256
+            );
+            var _Header = new JwtHeader(_signingCredentials);
+            var _Claims = new[] {
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim(JwtRegisteredClaimNames.Name, Nombre)
+            };
+            var _Payload = new JwtPayload(
+                issuer: _configuration["JWT:Issuer"],
+                audience: _configuration["JWT:Audience"],
+                claims: _Claims,
+                notBefore: DateTime.UtcNow,
+                expires: DateTime.UtcNow.AddHours(2)
+            );
+            var _Token = new JwtSecurityToken(_Header, _Payload);
+            return new JwtSecurityTokenHandler().WriteToken(_Token);
         }
     }
 }

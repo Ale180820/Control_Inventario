@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eAZ/c9L/Me19fGpN7UX++8bLCPFl52FYR3ftjnlhvJ8LdOYQVjh4lgS7+Pw2dGpU1tBULmi+dU/yJZ/jZQ/DOA==",
+  "dgSpecHash": "GEl+veUPONYCZHm7J6OPNposujsQQ3ZtX2rTeZgQvQNp6AVDSGiEvUadWxPAo8dTGdeWmBp367IHhbLDO3lsEg==",
   "success": true,
   "projectFilePath": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\aylin\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\aylin\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",
     "C:\\Users\\aylin\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
+    "C:\\Users\\aylin\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.5\\microsoft.aspnetcore.authentication.jwtbearer.7.0.5.nupkg.sha512",
     "C:\\Users\\aylin\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.4\\microsoft.aspnetcore.openapi.7.0.4.nupkg.sha512",
     "C:\\Users\\aylin\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "C:\\Users\\aylin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

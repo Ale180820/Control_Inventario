@@ -5,8 +5,6 @@
 }
 
 <h1>Editar información de la ubicación</h1>
-
-<h4>Ubicacion</h4>
 <hr />
 <div class="row">
     <div class="col-lg-6">
@@ -18,15 +16,7 @@
                     <div class="row mb-3">
                         <label for="inputText" class="col-sm-2 col-form-label">No. de Gondola</label>
                         <div class="col-sm-5">
-                            <select asp-for="NoGondola" class="form-select" aria-label="Default select example">
-                                <option selected="">Seleccione una opción</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
+                            <input asp-for="NoGondola" class="form-control" />
                             <span asp-validation-for="NoGondola" class="text-danger"></span>
                         </div>
                     </div>

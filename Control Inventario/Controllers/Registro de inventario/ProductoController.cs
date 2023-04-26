@@ -5,9 +5,11 @@ using System.Configuration;
 using Amazon;
 using ControlInventarioModel;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Control_Inventario.Controllers.Registro_de_inventario
 {
+    [Authorize]
     public class ProductoController : Controller
     {
         // GET: ProductoController
@@ -19,7 +21,12 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
             ViewBag.Rol = rol;
             return View(productos);
         }
-
+        public async Task<IActionResult> Details(int? id)
+        {
+            var path = "Producto/Get/" + id;
+            Producto producto = await Functions.APIServices<Producto>.Get(path);
+            return View(producto);
+        }
         // GET: ProductoController/Create
         [HttpGet]
         public IActionResult Create()
@@ -28,14 +35,14 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Producto producto, FormFile fileImage)
+        public async Task<IActionResult> Create(Producto producto)
         {
-            if (fileImage != null)
-            {
-                string fileName = Path.GetFileName(fileImage.Name);
-            }
+            //if (fileImage != null)
+            //{
+            //    string fileName = Path.GetFileName(fileImage.Name);
+            //}
             var path = "Producto/Set";
-            UploadFile(producto.Foto);
+            //UploadFile(producto.Foto);
             Producto movies = await Functions.APIServices<Producto>.Post(producto, path);
             return RedirectToAction(nameof(Index));
         }

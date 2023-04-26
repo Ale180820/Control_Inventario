@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PiJU5i+xhTEF/mPxU0nkh0Q31Uw/+CTp0HIdZ2fGkFxNT0a3dnHoWp8eGOadCw1h6We5nHBdd8EyG7Wk/36TUA==",
+  "dgSpecHash": "M08+dZzQfso8KoQy25BBFB/NnG8xjFZwyWdkipdBbrJdTDTujoV8RLJY9jLBWxoPXNAb2P6WXe4t/MhGn+PR/w==",
   "success": true,
   "projectFilePath": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\Control Inventario.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\aylin\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",
     "C:\\Users\\aylin\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
     "C:\\Users\\aylin\\.nuget\\packages\\mailkit\\4.0.0\\mailkit.4.0.0.nupkg.sha512",
+    "C:\\Users\\aylin\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.5\\microsoft.aspnetcore.authentication.jwtbearer.7.0.5.nupkg.sha512",
     "C:\\Users\\aylin\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "C:\\Users\\aylin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\aylin\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",

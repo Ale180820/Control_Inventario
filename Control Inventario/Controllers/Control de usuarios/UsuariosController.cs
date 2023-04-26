@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ControlInventarioModel;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Control_Inventario.Controllers
 {
+    [Authorize]
     public class UsuariosController : Controller
     {
         // GET: Usuarios
@@ -53,6 +55,7 @@ namespace Control_Inventario.Controllers
         {
             var path = "Usuario/Get/" + id;
             Usuario usuario = await Functions.APIServices<Usuario>.Get(path);
+            usuario.Contrasena = Cripto.DecodeFrom64(usuario.Contrasena);
             var path2 = "Rol/GetList";
             IEnumerable<Rol> roles = await Functions.APIServices<IEnumerable<Rol>>.Get(path2);
             ViewData["RolId"] = new SelectList(roles, "Id", "Nombre",usuario.RolId);
@@ -70,7 +73,7 @@ namespace Control_Inventario.Controllers
             {
                 return NotFound();
             }
-
+            usuario.Contrasena = Cripto.EncodePasswordToBase64(usuario.Contrasena);
             var path = "Usuario/Put/" + id;
             Usuario result = await Functions.APIServices<Usuario>.Post(usuario, path);
             return RedirectToAction(nameof(Index));
@@ -81,6 +84,7 @@ namespace Control_Inventario.Controllers
         {
             var path = "Usuario/Get/" + id;
             Usuario usuario = await Functions.APIServices<Usuario>.Get(path);
+            usuario.FechaEgreso = DateTime.Now;
             return View(usuario);
         }
 

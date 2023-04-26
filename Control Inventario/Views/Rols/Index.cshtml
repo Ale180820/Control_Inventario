@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Roles</h1>
+<h1>Listado de Roles</h1>
 <p>
     <a asp-action="Create">Crear un nuevo rol</a>
 </p>
@@ -19,16 +19,18 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-               <a asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil"></i></a> |
-               <a asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash"></i></a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil"></i></a> |
+                    <a asp-action="Details" asp-route-id="@item.Id"><i class="bi bi-info-circle"></i></a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash"></i></a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

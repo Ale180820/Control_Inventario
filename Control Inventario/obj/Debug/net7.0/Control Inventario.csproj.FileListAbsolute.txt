@@ -294,3 +294,4 @@ C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\
 C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\Control Inventario\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
 C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\Control Inventario\bin\Debug\net7.0\MailKit.dll
 C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\Control Inventario\bin\Debug\net7.0\MimeKit.dll
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\Control Inventario\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

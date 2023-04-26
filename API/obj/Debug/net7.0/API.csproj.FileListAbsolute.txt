@@ -288,3 +288,4 @@ C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\
 C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\API\obj\Debug\net7.0\API.pdb
 C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\API\obj\Debug\net7.0\API.genruntimeconfig.cache
 C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\API\obj\Debug\net7.0\ref\API.dll
+C:\Users\aylin\OneDrive\Documentos\Noveno ciclo 2023\Programación Web\Proyecto\Entrega 2\Control Inventario\API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

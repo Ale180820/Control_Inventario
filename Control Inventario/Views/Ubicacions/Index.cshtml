@@ -23,19 +23,21 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NoGondola)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nivel)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil"></i></a> | 
-                <a asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash"></i></a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NoGondola)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nivel)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil"></i></a> |
+                    <a asp-action="Details" asp-route-id="@item.Id"><i class="bi bi-info-circle"></i></a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash"></i></a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

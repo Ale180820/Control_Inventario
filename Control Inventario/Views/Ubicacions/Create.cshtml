@@ -4,33 +4,41 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-
-<h4>Ubicacion</h4>
+<h1>Crear una nueva ubicación</h1>
 <hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="NoGondola" class="control-label"></label>
-                <input asp-for="NoGondola" class="form-control" />
-                <span asp-validation-for="NoGondola" class="text-danger"></span>
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body" style="padding:20px 20px 20px 20px">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="row mb-3">
+                        <label for="inputText" class="col-sm-2 col-form-label">No. de Gondola</label>
+                        <div class="col-sm-10">
+                            <input asp-for="NoGondola" class="form-control" />
+                            <span asp-validation-for="NoGondola" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputText" class="col-sm-2 col-form-label">Nivel</label>
+                        <div class="col-sm-10">
+                            <input asp-for="Nivel" class="form-control" />
+                            <span asp-validation-for="Nivel" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Guardar" class="btn btn-primary" />
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label asp-for="Nivel" class="control-label"></label>
-                <input asp-for="Nivel" class="form-control" />
-                <span asp-validation-for="Nivel" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Volver</a>
 </div>
 
 @section Scripts {
