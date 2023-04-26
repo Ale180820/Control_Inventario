@@ -14,7 +14,7 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         public async Task<IActionResult> Index()
         {
             var rol = HttpContext.Session.GetString("Rol");
-            if (rol != "4" && rol != "3")
+            if (rol != "1" && rol != "3")
             {
                 return RedirectToAction("Login","Autenticacion");
             }
@@ -26,7 +26,7 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         public async Task<IActionResult> Details(int? id)
         {
             var rol = HttpContext.Session.GetString("Rol");
-            if (rol != "4" && rol != "3")
+            if (rol != "1" && rol != "3")
             {
                 return RedirectToAction("Login", "Autenticacion");
             }
@@ -39,7 +39,7 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         public async Task<IActionResult> Create()
         {
             var rol = HttpContext.Session.GetString("Rol");
-            if (rol != "4" && rol != "3")
+            if (rol != "1" && rol != "3")
             {
                 return RedirectToAction("Login", "Autenticacion");
             }
@@ -58,7 +58,7 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         public async Task<IActionResult> Create(BitacoraInventario inventario)
         {
             var rol = HttpContext.Session.GetString("Rol");
-            if (rol != "4" && rol != "3")
+            if (rol != "1" && rol != "3")
             {
                 return RedirectToAction("Login", "Autenticacion");
             }
@@ -74,7 +74,7 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         public async Task<IActionResult> Edit(int? id)
         {
             var rol = HttpContext.Session.GetString("Rol");
-            if (rol != "4" && rol != "3")
+            if (rol != "1" && rol != "3")
             {
                 return RedirectToAction("Login", "Autenticacion");
             }
@@ -95,7 +95,7 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         public async Task<IActionResult> Edit(int id, BitacoraInventario inventario)
         {
             var rol = HttpContext.Session.GetString("Rol");
-            if (rol != "4" && rol != "3")
+            if (rol != "1" && rol != "3")
             {
                 return RedirectToAction("Login", "Autenticacion");
             }
