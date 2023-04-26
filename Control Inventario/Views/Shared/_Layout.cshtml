@@ -273,7 +273,7 @@
     <aside id="sidebar" class="sidebar">
 
         <ul class="sidebar-nav" id="sidebar-nav">
-            @if (ViewBag.Rol == "1")
+            @if (Context.Session.GetString("Rol") == "1")
             {
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="@Url.Action("Index","Producto")">
@@ -300,10 +300,19 @@
                     </a>
                 </li>
             }
+            else if (Context.Session.GetString("Rol") == "2")
+            {
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="@Url.Action("Index","BitacoraInventario")">
+                        <i class="bi bi-shop"></i>
+                        <span>Inventario</span>
+                    </a>
+                </li>
+            }
             else
             {
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="@Url.Action("Index","Producto")">
+                    <a class="nav-link collapsed" href="@Url.Action("Catalogo","BitacoraInventario")">
                         <i class="bi bi-grid"></i>
                         <span>Productos</span>
                     </a>

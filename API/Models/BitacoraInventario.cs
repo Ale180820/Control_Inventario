@@ -19,7 +19,7 @@ public partial class BitacoraInventario
 
     public int? CantidadActual { get; set; }
 
-    public sbyte? Disponibilidad { get; set; }
+    public bool? Disponibilidad { get; set; }
 
     public virtual Producto Producto { get; set; } = null!;
 

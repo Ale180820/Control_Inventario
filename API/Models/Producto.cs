@@ -21,5 +21,7 @@ public partial class Producto
 
     public string? Descripcion { get; set; }
 
-    public virtual ICollection<BitacoraInventario> BitacoraInventarios { get; } = new List<BitacoraInventario>();
+    public string? Guid { get; set; }
+
+    public virtual ICollection<BitacoraInventario> BitacoraInventarios { get; set; } = new List<BitacoraInventario>();
 }

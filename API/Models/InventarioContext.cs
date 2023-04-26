@@ -87,8 +87,11 @@ public partial class InventarioContext : DbContext
                 .HasColumnType("text")
                 .HasColumnName("descripcion");
             entity.Property(e => e.Foto)
-                .HasMaxLength(255)
+                .HasMaxLength(100)
                 .HasColumnName("foto");
+            entity.Property(e => e.Guid)
+                .HasMaxLength(100)
+                .HasColumnName("GUID");
             entity.Property(e => e.Marca)
                 .HasMaxLength(255)
                 .HasColumnName("marca");

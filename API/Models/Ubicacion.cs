@@ -11,5 +11,5 @@ public partial class Ubicacion
 
     public int? Nivel { get; set; }
 
-    public virtual ICollection<BitacoraInventario> BitacoraInventarios { get; } = new List<BitacoraInventario>();
+    public virtual ICollection<BitacoraInventario> BitacoraInventarios { get; set; } = new List<BitacoraInventario>();
 }

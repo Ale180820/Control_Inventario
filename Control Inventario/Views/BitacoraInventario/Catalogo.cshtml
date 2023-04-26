@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ControlInventarioModel.BitacoraInventario>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nombre del producto
+            </th>
+            <th>
+                Disponibilidad
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NombreProducto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Disponibilidad)
+                </td>
+                <td>
+                    @Html.ActionLink("Detalle del producto", "DetalleCatalogo", new { id=item.ProductoId })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

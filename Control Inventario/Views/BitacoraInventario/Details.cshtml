@@ -1,0 +1,53 @@
+﻿@model ControlInventarioModel.BitacoraInventario
+
+<div>
+    <h4>BitacoraInventario</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Ubicación (No. de Gondola)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.noGondola)
+        </dd>
+        <dt class = "col-sm-2">
+            Fecha de ingreso
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaIngreso)
+        </dd>
+        <dt class = "col-sm-2">
+            Fecha de modificación
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaModificacion)
+        </dd>
+        <dt class = "col-sm-2">
+            Nombre del Producto
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NombreProducto)
+        </dd>
+        <dt class = "col-sm-2">
+            Cantidad Inicial
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CantidadInicial)
+        </dd>
+        <dt class = "col-sm-2">
+            Cantidad Actual
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CantidadActual)
+        </dd>
+        <dt class = "col-sm-2">
+            Disponibilidad
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Disponibilidad)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Volver</a>
+</div>

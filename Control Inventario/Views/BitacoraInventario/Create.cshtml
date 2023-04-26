@@ -1,0 +1,41 @@
+﻿@model ControlInventarioModel.BitacoraInventario
+
+<h4>BitacoraInventario</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                Ubicación (No. de Gondola)
+                <select asp-for="UbicacionId" class="form-control" asp-items="ViewBag.UbicacionId"></select>
+            </div>
+            <div class="form-group">
+                Fecha de ingreso
+                <input asp-for="FechaIngreso" class="form-control" />
+                <span asp-validation-for="FechaIngreso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                Nombre del Producto
+                <select asp-for="ProductoId" class="form-control" asp-items="ViewBag.ProductoId"></select>
+            </div>
+            <div class="form-group">
+                Cantidad Inicial
+                <input asp-for="CantidadInicial" class="form-control" />
+                <span asp-validation-for="CantidadInicial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                ¿Se encuentra disponible?
+                @Html.CheckBoxFor(model => model.Disponibilidad)
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Volver</a>
+</div>
+
