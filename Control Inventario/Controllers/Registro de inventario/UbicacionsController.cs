@@ -17,6 +17,10 @@ namespace Control_Inventario.Controllers
         // GET: Ubicacions
         public async Task<IActionResult> Index()
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             var path = "Ubicacions/GetList";
             IEnumerable<Ubicacion> ubicaciones = await Functions.APIServices<IEnumerable<Ubicacion>>.Get(path);
             return View(ubicaciones);
@@ -25,6 +29,10 @@ namespace Control_Inventario.Controllers
         // GET: Ubicacions/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             var path = "Ubicacions/Get/" + id;
             Ubicacion Ubicacion = await Functions.APIServices<Ubicacion>.Get(path);
             return View(Ubicacion);
@@ -33,6 +41,10 @@ namespace Control_Inventario.Controllers
         // GET: Ubicacions/Create
         public IActionResult Create()
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             return View();
         }
 
@@ -51,6 +63,10 @@ namespace Control_Inventario.Controllers
         // GET: Ubicacions/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             var path = "Ubicacions/Get/" + id;
             Ubicacion Ubicacion = await Functions.APIServices<Ubicacion>.Get(path);
             return View(Ubicacion);
@@ -76,6 +92,10 @@ namespace Control_Inventario.Controllers
         // GET: Ubicacions/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             var path = "Ubicacions/Get/" + id;
             Ubicacion Ubicacion = await Functions.APIServices<Ubicacion>.Get(path);
             return View(Ubicacion);
@@ -89,6 +109,12 @@ namespace Control_Inventario.Controllers
             var path = "Ubicacions/Delete/" + id;
             var result = await Functions.APIServices<GeneralResult>.Delete(path);
             return RedirectToAction(nameof(Index));
+        }
+
+        public bool validacionRol()
+        {
+            var rol = HttpContext.Session.GetString("Rol");
+            return (rol != "1" && rol != "3");
         }
     }
 }

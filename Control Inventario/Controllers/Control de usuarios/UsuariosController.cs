@@ -16,6 +16,10 @@ namespace Control_Inventario.Controllers
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             var path = "Usuario/GetList";
             IEnumerable<Usuario> usuarios = await Functions.APIServices<IEnumerable<Usuario>>.Get(path);
             return View(usuarios);
@@ -24,6 +28,10 @@ namespace Control_Inventario.Controllers
         // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             var path = "Usuario/Get/" + id;
             Usuario usuario = await Functions.APIServices<Usuario>.Get(path);
             return View(usuario);
@@ -32,6 +40,10 @@ namespace Control_Inventario.Controllers
         // GET: Usuarios/Create
         public async Task<IActionResult> Create()
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             var path = "Rol/GetList";
             IEnumerable<Rol> roles = await Functions.APIServices<IEnumerable<Rol>>.Get(path);
             ViewData["RolId"] = new SelectList(roles, "Id", "Nombre");
@@ -53,6 +65,10 @@ namespace Control_Inventario.Controllers
         // GET: Usuarios/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             var path = "Usuario/Get/" + id;
             Usuario usuario = await Functions.APIServices<Usuario>.Get(path);
             usuario.Contrasena = Cripto.DecodeFrom64(usuario.Contrasena);
@@ -82,6 +98,10 @@ namespace Control_Inventario.Controllers
         // GET: Usuarios/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             var path = "Usuario/Get/" + id;
             Usuario usuario = await Functions.APIServices<Usuario>.Get(path);
             usuario.FechaEgreso = DateTime.Now;
@@ -96,6 +116,11 @@ namespace Control_Inventario.Controllers
             var path = "Usuario/Delete/" + id;
             var result = await Functions.APIServices<GeneralResult>.Delete(path);
             return RedirectToAction(nameof(Index));
+        }
+        public bool validacionRol()
+        {
+            var rol = HttpContext.Session.GetString("Rol");
+            return (rol != "1" && rol != "3");
         }
     }
 }

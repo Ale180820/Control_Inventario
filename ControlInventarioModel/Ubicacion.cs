@@ -10,8 +10,8 @@ namespace ControlInventarioModel
     {
         public int Id { get; set; }
 
-        public int? NoGondola { get; set; }
+        public int NoGondola { get; set; }
 
-        public int? Nivel { get; set; }
+        public int Nivel { get; set; }
     }
 }

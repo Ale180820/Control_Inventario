@@ -1,14 +1,20 @@
 ﻿using ControlInventarioModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Security.Cryptography;
 
 namespace Control_Inventario.Controllers.Registro_de_inventario
 {
+    [Authorize]
     public class ReportesController : Controller
     {
         public async Task<IActionResult> Reporteria()
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             var path = "Producto/GetList";
             IEnumerable<Producto> productos = await Functions.APIServices<IEnumerable<Producto>>.Get(path);
             ViewData["Productos"] = productos.Count();
@@ -27,6 +33,11 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
             ViewData["Inversion"] = result.Sum(x => x.money);
 
             return View(inventario.OrderByDescending(i => i.CantidadActual).Take(10));
+        }
+        public bool validacionRol()
+        {
+            var rol = HttpContext.Session.GetString("Rol");
+            return (rol != "1" && rol != "3");
         }
     }
 }

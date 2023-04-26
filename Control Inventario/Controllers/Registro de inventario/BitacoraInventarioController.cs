@@ -13,10 +13,9 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         // GET: BitacoraInventarioController
         public async Task<IActionResult> Index()
         {
-            var rol = HttpContext.Session.GetString("Rol");
-            if (rol != "1" && rol != "3")
+            if (validacionRol())
             {
-                return RedirectToAction("Login","Autenticacion");
+                return RedirectToAction("Login", "Autenticacion");
             }
             var path = "BitacoraInventarios/GetList";
             IEnumerable<BitacoraInventario> inventario = await Functions.APIServices<IEnumerable<BitacoraInventario>>.Get(path);
@@ -25,8 +24,7 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         // GET: BitacoraInventarioController/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            var rol = HttpContext.Session.GetString("Rol");
-            if (rol != "1" && rol != "3")
+            if (validacionRol())
             {
                 return RedirectToAction("Login", "Autenticacion");
             }
@@ -38,8 +36,7 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         // GET: BitacoraInventarioController/Create
         public async Task<IActionResult> Create()
         {
-            var rol = HttpContext.Session.GetString("Rol");
-            if (rol != "1" && rol != "3")
+            if (validacionRol())
             {
                 return RedirectToAction("Login", "Autenticacion");
             }
@@ -57,11 +54,6 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(BitacoraInventario inventario)
         {
-            var rol = HttpContext.Session.GetString("Rol");
-            if (rol != "1" && rol != "3")
-            {
-                return RedirectToAction("Login", "Autenticacion");
-            }
             var path = "BitacoraInventarios/Set";
             inventario.FechaModificacion = DateTime.Now;
             inventario.CantidadActual = inventario.CantidadInicial;
@@ -73,8 +65,7 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         // GET: BitacoraInventarioController/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            var rol = HttpContext.Session.GetString("Rol");
-            if (rol != "1" && rol != "3")
+            if (validacionRol())
             {
                 return RedirectToAction("Login", "Autenticacion");
             }
@@ -94,15 +85,6 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         [HttpPost]
         public async Task<IActionResult> Edit(int id, BitacoraInventario inventario)
         {
-            var rol = HttpContext.Session.GetString("Rol");
-            if (rol != "1" && rol != "3")
-            {
-                return RedirectToAction("Login", "Autenticacion");
-            }
-            if (id != inventario.Id)
-            {
-                return NotFound();
-            }
             inventario.FechaModificacion = DateTime.Now;
             var path = "BitacoraInventarios/Put/" + id;
             BitacoraInventario result = await Functions.APIServices<BitacoraInventario>.Post(inventario, path);
@@ -113,6 +95,10 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             var path = "BitacoraInventarios/Get/" + id;
             BitacoraInventario inventario = await Functions.APIServices<BitacoraInventario>.Get(path);
             return View(inventario);
@@ -143,6 +129,12 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
             var path = "Producto/Get/" + id;
             Producto producto = await Functions.APIServices<Producto>.Get(path);
             return View(producto);
+        }
+
+        public bool validacionRol()
+        {
+            var rol = HttpContext.Session.GetString("Rol");
+            return (rol != "1" && rol != "3");
         }
     }
 }

@@ -15,6 +15,10 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         // GET: ProductoController
         public async Task<IActionResult> Index()
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             var path = "Producto/GetList";
             IEnumerable<Producto> productos = await Functions.APIServices<IEnumerable<Producto>>.Get(path);
             var rol = HttpContext.Session.GetString("Rol");
@@ -23,6 +27,10 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         }
         public async Task<IActionResult> Details(int? id)
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             var path = "Producto/Get/" + id;
             Producto producto = await Functions.APIServices<Producto>.Get(path);
             return View(producto);
@@ -31,16 +39,16 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         [HttpGet]
         public IActionResult Create()
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             return View();
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(Producto producto)
         {
-            //if (fileImage != null)
-            //{
-            //    string fileName = Path.GetFileName(fileImage.Name);
-            //}
             var path = "Producto/Set";
             //UploadFile(producto.Foto);
             Producto movies = await Functions.APIServices<Producto>.Post(producto, path);
@@ -50,6 +58,10 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
 
         public async Task<IActionResult> Edit(int? id)
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             var path = "Producto/Get/" + id;
             Producto producto = await Functions.APIServices<Producto>.Get(path);
             return View(producto);
@@ -71,6 +83,10 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
         [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
+            if (validacionRol())
+            {
+                return RedirectToAction("Login", "Autenticacion");
+            }
             var path = "Producto/Get/" + id;
             Producto producto = await Functions.APIServices<Producto>.Get(path);
             return View(producto);
@@ -136,6 +152,12 @@ namespace Control_Inventario.Controllers.Registro_de_inventario
                     Console.WriteLine("Error occurred: " + amazonS3Exception.Message);
                 }
             }
+        }
+
+        public bool validacionRol()
+        {
+            var rol = HttpContext.Session.GetString("Rol");
+            return (rol != "1" && rol != "3");
         }
     }
 }

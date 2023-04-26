@@ -117,6 +117,10 @@
       "PackagePath": "staticwebassets\\assets\\img\\suply.webp"
     },
     {
+      "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\img\\usuario.png",
+      "PackagePath": "staticwebassets\\assets\\img\\usuario.png"
+    },
+    {
       "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\assets\\js\\main.js",
       "PackagePath": "staticwebassets\\assets\\js\\main.js"
     },
@@ -1695,6 +1699,10 @@
     {
       "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
       "Id": "C:\\Users\\aylin\\OneDrive\\Documentos\\Noveno ciclo 2023\\Programación Web\\Proyecto\\Entrega 2\\Control Inventario\\Control Inventario\\wwwroot\\css\\styles.css",
